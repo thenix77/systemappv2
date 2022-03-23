@@ -2,7 +2,7 @@ export const msalConfig = {
   auth: {
     clientId: "65852916-64f4-480a-936a-3d94aa94f32a",
     authority: "https://login.microsoftonline.com/b4a40545-7779-4b38-aff7-1f1738f80840",
-    redirectUri: "https://senati-analitica.u-planner.com",
+    redirectUri: "https://www.gcabana.com",
    },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored

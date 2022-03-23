@@ -11,7 +11,7 @@ export default class Login  extends Component {
           <ProfileContent />
       </AuthenticatedTemplate>
       <UnauthenticatedTemplate>
-          <p>Ingreso al sistema</p>
+          <p>Ingreso al sistema analitica utda</p>
       </UnauthenticatedTemplate>
     </PageLayout>
     )

@@ -1,10 +1,7 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar"
+
 import { useIsAuthenticated } from "@azure/msal-react"
-import { SignInButton } from "../authentication/SignInButton";
-import { SignOutButton } from "../authentication/SignOutButton";
-
-
+import { NavbarMain } from "./NavbarMain"
 
 
 /**
@@ -15,16 +12,18 @@ export const PageLayout = (props:any) => {
 
     return (
         <>
-            <Navbar bg="primary" variant="dark">
-                <a className="navbar-brand" >MSAL Ingreso al sistema </a>
-                { isAuthenticated ? <SignOutButton /> : <SignInButton /> }
-            </Navbar>
-            <h5 style={{textAlign:'center'}}>
-              Bienvenido a la Autentificacion Microsoft para React
-            </h5>
-            <br />
-            <br />
-            {props.children}
+            <NavbarMain />
+            <div className="row">
+                <div className="col-12">
+                    <h5 style={{textAlign:'center'}} className='title'>
+                        Bienvenido a la Autentificacion Microsoft para React
+                    </h5>
+                </div>
+                <div className="col-12">
+                    {props.children}
+                </div>
+            </div>
+            
         </>
     )
 }
